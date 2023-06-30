@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My Page</title>
+    <!-- for language -->
+    <meta charset="utf-8" />
+
+    <!-- for Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- SEO-->
+    <meta name="author" content="İbrahim Atakan Elkuş" />
+    <meta name="description" content="My Page " />
+    <meta name="keyword" content="Html5, Css3, Js, React, Bootstrap5" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+
+    <!-- font-awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- translator     -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar_id">
+    <noscript>Bu browser javascripti desteklemiyor.</noscript>
+    <!-- start codes -->
+
+    <!-- start nav codes -->
+    <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark fixed-top">
+        <div class="container"> <!-- container-fluid -->
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-gun" style="color: #0d0d0d;"></i></a>
+            <!-- buttonda redirect yap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>    
+                <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-regular fa-user" style="color: #ebfb04;"></i>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Giriş Yap</a></li>
+                            <li><a class="dropdown-item" href="#">Kayıt Ol</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sayfayı Çevir</a>
+                                <div id="google_translate_element"></div>
+
+                                <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                                }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </li>
+                        </ul>
+                    </li>      
+                </ul>                                  
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="darkModu()"> <i class="fa-solid fa-moon"></i></button>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- end nav codes -->
+
+    <!-- Login -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form5Example1" class="form-control" />
+                            <label class="form-label" for="form5Example1">Name</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                            <label class="form-check-label" for="form5Example3">
+                                I have read and agree to the terms
+                            </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start header codes -->
+    <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Frontend Eğitimimize Hoşgeldiniz}+h4{Html5 Css3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success -->
+    <header id="header_id">
+        <div class="text-white">
+            <div class="container text-center">
+                <div class="p-5 text-uppercase display-4">Read Dead Redemption 2</div>
+                <h4>Van der Linde</h4>
+                <a href="https://www.rockstargames.com/reddeadredemption2/restricted-content/agegate/form?redirect=https%3A%2F%2Fwww.rockstargames.com%2Freddeadredemption2%2F&options=&locale=en_us" class="btn btn-danger">Rockstar</a>
+                <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" class="btn btn-warning">Steam</a>
+                <a href="https://store.epicgames.com/tr/p/red-dead-redemption-2" class="btn btn-dark">Epic</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header codes -->
+
+    <!-- start main codes -->
+    <main id="main_id">
+        <!-- messages start -->
+        <!-- section#messages>div>h2.text-center.text-uppercase{Çalışmalarımız}^div.container>div.row>div.text-center.col-12.col-md-4.col-xl-3>i+h4{Html5}+p{lorem15}+button.btn.btn-primary{Daha fazla ..} -->
+        <section id="messages">
+            <div>
+                <h2 class="myHeading">Başlıca Karakterler</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-regular fa-chess-king fa-spin"></i>
+                        <h4>Dutch van der Linde</h4>
+                        <p class="line-clamp10">Dutch van der Linde (Benjamin Byron Davis), Van der Linde çetesinin lideridir. Hükûmet kontrolüne şiddetle karşı çıkan, bireysel özgürlüklere değer veren ve bağımsız bir yaşam hayal eden bir karakterdir.</p>
+                        <button class="btn btn-primary">Daha Fazla İçin..</button>
+                    </div>
+
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-regular fa-chess-bishop"></i>
+                        <h4>John Marston</h4>
+                        <p class="line-clamp4">John, Dutch van der Linde'in liderliğini yaptığı çetenin üyelerinden biriydi.</p>
+                        <button class="btn btn-primary">Daha Fazla İçin..</button>
+                    </div>
+
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-regular fa-chess-queen"></i>
+                        <h4>Micah Bell</h4>
+                        <p class="line-clamp4">Micah, Dutch van der Linde'in liderliğini yaptığı çetenin üyelerinden biriydi.</p>
+                        <button class="btn btn-primary">Daha Fazla İçin..</button>
+                    </div>
+
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fa-regular fa-chess-rook"></i>
+                        <h4>Arthur Morgan</h4>
+                        <p class="line-clamp10">Van der Linde çetesinin üst düzey bir üyesi olan Arthur, Amerikan sınırını temsil eden kurgusal bir eyalette hükûmet güçlerine ve diğer kanun düşmanlarına karşı hayatta kalmaya ve Vahşi Batı'nın zorlukları ile başa çıkmak zorunda olan bir karakterdir.</p>
+                        <button class="btn btn-primary">Daha Fazla İçin..</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- messages end -->
+
+         <!-- parallax start -->
+         <!-- section#parallax>div.container>div.row>h2.myHeading{Haberler}+p{lorem*12}+button.btn.btn-primary -->
+         <section id="parallax">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">Oyunun Özeti</h2>
+                    <p class="line-clamp20">Red Dead Redemption 2", Rockstar Games tarafından geliştirilen ve 2018 yılında piyasaya sürülen bir açık dünya aksiyon-macera oyunudur. Oyun, eşsiz bir hikaye anlatımıyla 19. yüzyıl Amerika'sında geçer ve oyuncuları vahşi batıdaki kaotik bir dünyaya götürür.
+
+                        Red Dead Redemption 2, büyüleyici bir açık dünya sunar ve genişleyen bir Amerikan sınırında keşif yapma özgürlüğü verir. Oyuncular, Arthur Morgan adında bir haydutun gözünden hikayenin içine çekilir. Arthur Morgan, Dutch van der Linde çetesinin bir üyesidir ve çeteye sadık kalmak, tehlikeli soygunlar gerçekleştirmek ve hayatta kalmak için savaşmak zorundadır.
+                        
+                        Oyunda, batının zorlu koşullarıyla başa çıkmak için avlanma, hayatta kalma ve kamp kurma gibi birçok etkileşimli özellik bulunur. Oyuncular, doğal yaşamı keşfedebilir, avcılık yapabilir ve çeşitli hayvanları avlayarak yiyecek ve malzeme elde edebilir. Aynı zamanda çiftlik işleriyle uğraşabilir, avladıkları hayvanları ticaret için kullanabilir ve çetenin kamplarını geliştirebilirler.
+                        
+                        Red Dead Redemption 2, hem ana hikaye görevlerine odaklanan zengin bir hikaye sunar hem de yan görevler, avcılık, balıkçılık, at yarışları, poker gibi çeşitli aktivitelerle doludur. Oyunda alınan kararlar, oyuncunun hikayeyi etkilemesine ve karakterin davranışını şekillendirmesine olanak tanır. Aynı zamanda, vahşi batıda hayatta kalmak için diğer karakterlerle etkileşime girerek ilişkileri yönetebilirsiniz.
+                        
+                        Grafiksel olarak muhteşem bir dünya sunan Red Dead Redemption 2, inanılmaz detaylara sahip bir ortam sunar. Büyüleyici manzaralar, yaşayan bir ekosistem, gerçekçi hava koşulları ve dinamik bir gündüz-gece döngüsü gibi unsurlar, oyuncuların kendilerini oyuna tamamen kaptırmalarını sağlar.
+                        
+                        Red Dead Redemption 2, heyecan verici bir hikaye, etkileyici karakterler ve muhteşem bir dünya sunarak oyunseverlere unutulmaz bir deneyim sunar. Oyun, vahşi batıda hayatta kalma mücadelesini keşfetmek isteyenleri büyüler ve her bir ayrıntısıyla oyuncuları derin bir deneyime çeker.</p>
+                   <div class="col-4"></div>
+                   <div class="col-4"><a class="btn btn-primary"> Daha Fazla ... </a></div>
+                   <div class="col-4"></div>
+                    
+                </div>
+            </div>
+         </section>
+          <!-- parallax end -->
+
+              <!-- newspaper start -->
+         <!-- section#newspaper>div.container>div.row>h2.myHeading{Haberler}+p{lorem*12}+button.btn.btn-primary -->
+         <section id="newspaper">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">Hikaye</h2>
+                    <p class="line-clamp20">Red Dead Redemption 2, 1899 yılında Amerikan vahşi batısında geçen bir hikayeyi anlatır. Oyunun baş karakteri Arthur Morgan, Dutch van der Linde çetesinin bir üyesidir. Arthur, Dutch liderliğindeki çetenin sadık bir üyesi olarak, çetenin hayatta kalma mücadelesi verdiği bir dönemde kendisini bulur.
+
+                        Hikaye, çetenin kendi kanunlarına göre yaşadığı ve tehlikeli soygunlar düzenlediği Amerikan sınırında başlar. Ancak çetenin güvenliği giderek azalırken, federal ajanlar ve diğer avcılar çeteyi yakalamak için peşlerine düşer. Arthur, sadık çete üyeleriyle birlikte çeteyi ayakta tutmak ve vahşi batının zorlu koşullarında hayatta kalmak için savaşmak zorundadır.
+                        
+                        Hikaye ilerledikçe, Arthur karakteri derinlemesine keşfedilir ve çetede yer alan diğer üyelerle yakın ilişkiler geliştirir. Dutch'un liderliğindeki çetenin hayatta kalma mücadelesi daha da zorlaşırken, Arthur'un çete içindeki sadakati ve kendisinin doğru yolu seçme çabaları sınanır.
+                        
+                        Arthur, çeşitli görevler ve soygunlar aracılığıyla çetenin gücünü artırmaya çalışırken, kendi iç çatışmalarıyla da yüzleşir. Hikaye boyunca, Arthur'un geçmişi, kişisel bağları ve inançları üzerine derin bir yolculuk yapılır. Aynı zamanda, çetenin dış dünyayla olan mücadelesi ve vahşi batıdaki değişen manzaralar da önemli bir rol oynar. Hikaye ilerledikçe, Arthur karakteri derinlemesine keşfedilir ve çetede yer alan diğer üyelerle yakın ilişkiler geliştirir. Dutch'un liderliğindeki çetenin hayatta kalma mücadelesi daha da zorlaşırken, Arthur'un çete içindeki sadakati ve kendisinin doğru yolu seçme çabaları sınanır.
+
+                        Arthur, çeşitli görevler ve soygunlar aracılığıyla çetenin gücünü artırmaya çalışırken, kendi iç çatışmalarıyla da yüzleşir. Hikaye boyunca, Arthur'un geçmişi, kişisel bağları ve inançları üzerine derin bir yolculuk yapılır. Aynı zamanda, çetenin dış dünyayla olan mücadelesi ve vahşi batıdaki değişen manzaralar da önemli bir rol oynar.
+                        
+                        Hikaye, çeteyi federal ajanlardan kaçırma, düşman çetelerle çatışma, kasaba ve şehirlerdeki görevleri yerine getirme gibi çeşitli aksiyon dolu olayları içerir. Arthur'un çeteye olan sadakati, sık sık çelişkilerle sınanır ve oyuncuların aldığı kararlar, hikayenin seyrini etkiler.
+                        
+                        Red Dead Redemption 2'nin hikayesi, epik bir finalle sonuçlanır. Arthur'un kararları ve eylemleri, hem çete üyelerini hem de kendi kaderini belirler. Oyuncular, Arthur'un kişisel yolculuğu boyunca hikayenin dokusunu hisseder ve onun kararlarının sonuçlarını yaşar.
+                        
+                        Red Dead Redemption 2, derin karakter gelişimi, etkileyici hikaye anlatımı ve zengin bir dünya sunan unutulmaz bir macera sunar. Oyuncular, vahşi batıdaki hayatta kalma mücadelesini deneyimlerken, Arthur Morgan'ın yolculuğuna tanık olurlar.
+                        </p>
+                   <div class="col-4"></div>
+                   <div class="col-4"><a class="btn btn-outline-danger"> Daha Fazla ... </a></div>
+                   <div class="col-4"></div>
+                </div>
+            </div>
+         </section>
+          <!-- newspaper end -->
+
+          <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">Blog</h2>
+                
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/dutch.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Dutch van der Linde</h4>
+                                <p class="card-text line-clamp8 text-dark">Dutch van der Linde, Red Dead Redemption 2 adlı video oyununun önemli bir karakteridir. O, oyundaki hikayenin ana odak noktası olan bir çete lideridir. Dutch, vahşi batıda hayatta kalmaya çalışan bir çete olan Van der Linde çetesinin lideridir.
+
+                                    Dutch, karizmatik ve manipülatif bir karakterdir. Çetesini özgürlük, bağımsızlık ve toplumsal adalet gibi ideallere dayanarak yönetir. Soygunlar ve diğer suç faaliyetleriyle geçimlerini sağlarlar. Dutch, çetesi için bir baba figürü ve mentor olarak görülür.
+                                    
+                                    Ancak, oyun ilerledikçe Dutch'un karakterinde değişiklikler ortaya çıkar. Basiretsiz kararlar alır, güvenlikleri tehlikeye atar ve çetesi için tehlikeli bir ortam yaratır. Oyunda Dutch'un ahlaki çöküşü ve karakterinin değişen dinamikleri önemli bir rol oynar.
+                                    
+                                    Dutch van der Linde, oyuncular tarafından karmaşık bir karakter olarak algılanır. Red Dead Redemption 2'de çetesiyle olan ilişkileri, idealizmi ve çöküşüyle hikayenin önemli bir parçasıdır.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/john.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">John Marston</h4>
+                                <p class="card-text line-clamp8 text-dark">John Marston, sert, cesur ve dürüst bir kovboydur. Oyunun başlarında, çetenin soygunlarına katılarak yaşamlarını sürdürmeye çalışırlar. Ancak John, çete ile olan bağlarını zorlar ve kendisini ve ailesini korumak için yeni bir hayat kurmaya karar verir.
+
+                                    Red Dead Redemption 2'de John Marston'ın hikayesi, oyunun devamı olan ilk Red Dead Redemption oyununun öncesini anlatır. O, federal ajanlar tarafından ele geçirilen eşi ve oğlunu kurtarmak için görevlendirilir ve çete üyelerini bulma görevini üstlenir. Bu süreçte, John, geçmişiyle yüzleşir, sadakatini sorgular ve kendi özgürlüğünü arar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/arthur.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Arthur Morgan</h4>
+                                <p class="card-text line-clamp8 text-dark">Arthur Morgan, 1899 yılında Amerika Birleşik Devletleri'nde doğmuş kurgusal bir karakterdir. Red Dead Redemption 2 adlı video oyununun ana karakterlerinden biridir.
+
+                                    Arthur Morgan, oyunun baş karakteri olan Dutch van der Linde'nin çetesinin üyesidir. Red Dead Redemption 2, Amerikan sınırında geçen vahşi batı döneminde geçen bir hikayeyi anlatır. Oyunda, Arthur Morgan'ın çetenin hayatta kalma mücadelesi, soygunlar, kovboyluk ve yerlilere karşı yürütülen savaşlara katılması gibi çeşitli maceralarını takip ederiz.
+                                    
+                                    Arthur Morgan, sadık bir çete üyesi ve Dutch'un sağ kolu olarak bilinir. Ancak zamanla karakteri, kendi değerlerini sorgulamaya başlar ve içsel bir dönüşüm geçirir. İnsanlara yardım etmek, suçlara bulaşmamak ve doğru olanı yapmak konusunda giderek daha fazla endişelenir. Oyunda, oyuncuların seçimlerine bağlı olarak Arthur'ın hikayesi farklı sonuçlara ulaşabilir.
+                                    
+                                    Arthur Morgan, sert dış görünümüne rağmen içtenlikle bağlı olduğu kişilere ve doğaya olan sevgisiyle tanınır. Oyunda sağlık sorunlarıyla da mücadele eder ve hikaye ilerledikçe daha derin bir karakter gelişimi yaşar.
+                                    
+                                    Sonuç olarak, Arthur Morgan vahşi batının atmosferinde çetesi için savaşan ve kendi içsel yolculuğunu yaşayan bir karakterdir. Oyuncular tarafından sevilen ve popüler hale gelen bir karakterdir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/micahh.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Micah Bell</h4>
+                                <p class="card-text line-clamp8 text-dark">Micah Bell, Red Dead Redemption 2 adlı video oyununun antagonisti olarak tanınan bir karakterdir. O, Van der Linde çetesinin üyesidir ve hikayede önemli bir rol oynar.
+
+                                    Micah, saldırgan, hırslı ve manipülatif bir karakterdir. O, Dutch van der Linde'nin sağ kolu olarak çeteye katılmıştır. Micah, kargaşa ve şiddet içeren yöntemleri savunur ve çetenin soygunlarında önemli bir rol oynar.
+                                    
+                                    Oyunda, Micah'ın karakteri giderek daha kötüye gider ve çeteyi iç çatışmalara sürükler. Sadakatsizliği ve kendi çıkarları için başkalarını kullanması nedeniyle diğer çete üyeleriyle de sürtüşür. Micah'ın varlığı, çetenin güvenliğini tehlikeye atar ve hikayede gerilim yaratır.
+                                    
+                                    Micah Bell, oyuncular arasında tartışmalı bir karakterdir. Oyun boyunca oyuncular, Micah'ın nihai amacını ve etkisini keşfederken, karakterin seçimlerinin hikayenin seyrini nasıl etkilediğini deneyimlerler.</p>
+                            </div>
+                        </div>
+                    </div>                   
+
+                </div>
+            </div>
+         </section>
+          <!-- newspaper end -->
+
+           <!-- newspaper start -->
+          <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">İletişim</h2>
+                
+                    <div class="col-md-6 mb-6">
+                        <h4>Oyunun geçtiği yer</h4>
+
+                        <div class="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506512.9403869223!2d-35.19848917297191!3d-7.339030963005976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace839019aa3d7%3A0x6e414a9c6d26db34!2zSm_Do28gUGVzc29hLCBQYXJhw61iYSwgQnJhc2lsaWVu!5e0!3m2!1sde!2str!4v1688130948945!5m2!1sde!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                   
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-6">
+                        <form>
+
+                            <label for="fname">Ad</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Adınız...">
+                        
+                            <label for="lname">Soyadı</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Soy İsminiz...">
+                        
+                            <label for="telephone">Telefon Numarası</label>
+                            <input type="text" name="phonenumber" id="pnumber" placeholder="Telefon numaranız...">
+                            <label for="country">Ülke Seçimi</label>
+                            <select id="country" name="country">
+                              <option value="turkey">Türkiye</option>
+                              <option value="kanada">Almanya</option>
+                              <option value="amerika">Amerika</option>
+                            </select>
+                        
+                            <label for="subject">Konu :</label>
+                            <textarea id="subject" name="subject" placeholder="Bir şey yazınız..." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Gönder">
+                        
+                          </form>
+                    </div>
+                    
+                </div>
+                        
+            </div>
+          </section>
+           <!-- newspaper end -->
+    </main>
+   
+ 
+    <!-- end main codes -->
+
+    <!-- start footer codes -->
+    <footer id="footer_id" class="bg-dark">
+        <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Haklar saklıdır</div>
+    </footer>
+    <!-- end footer codes -->
+
+    <a href="#navbar_id" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <!-- end codes -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" />
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous" />
+    </script>
+
+    <!-- external JS -->
+    <script src="template.js"></script>
+</body>
+
+</html>

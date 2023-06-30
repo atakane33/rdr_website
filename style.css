@@ -1,0 +1,251 @@
+:root{
+    --templateBgColor:rgb(43, 43, 43);
+}
+
+/*######################################################*/
+/* Common Property */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    line-height: 1.2;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover {
+    opacity: 0.9;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8);
+    transition: 3s all;
+    cursor: pointer;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+p{
+    color:black!important;
+}
+
+.my_clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.myHeading{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0.4px -0.9px rgba(0,0,0,0.9);
+    opacity: 0.7;
+}
+
+/* my special Size */
+.fSize1 {
+    font-size: 1rem;
+    /* 15*1 */
+}
+
+.fSize2 {
+    font-size: 2rem;
+    /* 15*1 */
+}
+
+.fSize3 {
+    font-size: 3rem;
+    /* 15*1 */
+}
+
+.fSize4 {
+    font-size: 4rem;
+    /* 15*1 */
+}
+
+/* Line-clamp */
+.line-clamp4{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden; 
+}
+
+.line-clamp5{
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden; 
+}
+
+.line-clamp8{
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden; 
+}
+
+.line-clamp10{
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden; 
+}
+
+.line-clamp20{
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden; 
+}
+
+/*######################################################*/
+
+/* Navbar */
+.dark_mode{
+    background-color: var(--templateBgColor);
+    color: #ffffff;
+}
+
+nav#navbar_id{
+    background-color: red;
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+    color: yellow;
+}
+
+.nav.navbar-nav.navbar-right{
+    flex: auto; 
+    margin-left: auto;
+}
+
+/* Header */
+header{
+background-image: url("./img/rdr.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+height:80vh;
+padding-top:4rem;
+}
+
+/* Messages */
+#messages{
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+#messages > .container > .row > .text-center> p{
+    color:rgb(202, 16, 16)!important;
+}
+
+#messages i{
+    color:blue;
+    font-size: 5rem;
+}
+
+
+/* parallax */
+#parallax{
+    background-color: transparent;
+    background-image: url('./img/rdr2.jpg');
+    background-size: cover;
+    height: 35rem;
+    padding:2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#parallax > h2,p{
+    color:white!important;
+}
+
+/* newspaper */
+#newspaper  {  
+   height: 35rem;
+   padding:2rem;
+}
+#newspaper p {  
+    color:black!important;  
+    text-align: justify;
+}
+
+/* blog */
+#blog{
+background-color: #d0b611;
+}
+
+#contact .google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.col-md-6.mb-6 form{
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Footer */
+footer{
+    min-height: 10rem;
+    width: auto;
+    color:white;
+}
+
+
+/* Back top */
+#back_top{
+    position: fixed;
+    right: 0;
+    bottom:0;
+}
+
+#back_top:hover{
+    opacity: 0.8;
+}
